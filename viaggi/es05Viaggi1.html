@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agenzia Viaggi">
+    <meta name="keywords" content="Viaggi Organizzati Agenzia Aereo Voli USA stati uniti america Mare Montagna">
+    <meta name="Author" content="IvanTour">
+    <meta name="Robots" content="Index, follow">
+    <title>Agenzia Viaggi</title>
+    <style>
+        body{
+            margin: 0px;
+            background-image: url(img/mondo.png);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        }
+        nav a {
+            justify-content: center;
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        nav a:link{
+            text-decoration: none;
+            color: whitesmoke
+
+        }
+        nav a:hover{
+            background: #ddd;
+            color: black;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        main{
+            text-align: center;
+            margin-top: 55px;
+        }
+        h1{
+            font-size: 27px;
+        }
+        .img{
+            margin: 5px;
+            height: 200px;
+            width: 320px;
+            cursor: pointer;
+            
+        }
+        .img:hover{
+            transform: scale(1.2);
+            transition-duration: 10s;
+            transition-timing-function:cubic-bezier(0, 0.5, 1, 1);
+        }
+        .img-container{
+            overflow: hidden;
+            object-fit: cover;
+            display: inline-block;
+        }
+        .img-container:hover{
+            border: 2px solid blue;
+            box-shadow: 0px 0px 10px 5px #939393;
+        }
+        .map:hover{
+            border: 2px solid blue;
+            box-shadow: 0px 0px 10px 5px #939393;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav style="text-align: center; " >
+        <a href="es05Viaggi1.html">Home </a>
+        <a href="es05Viaggi2.html">Chi siamo</a>
+        <a href="es05Viaggi3.html"> Contatti</a>
+    </nav>
+    <main >
+        <header>
+            <h1>Agenzia di viaggi <u><em>tutto il mondo</em></u></h1>
+            <h2>Scegli la tua destinazione:</h2>
+        </header>
+        <section>   <!-- mappa USA -->
+            <img class="map" src="img/usa.png" usemap="#image-map" alt="mappa USA" style="zoom: 0.7;">
+            <map name="image-map">
+                <area target="_blank" alt="California" title="California" href="https://it.wikipedia.org/wiki/California" coords="60,122,105,136,93,178,148,261,140,275,135,281,136,288,104,283,102,266,94,262,86,255,70,243,61,211,56,182,51,167,54,155,50,144,58,137" shape="poly">
+                <area target="_blank" alt="Florida" title="Florida" href="https://it.wikipedia.org/wiki/Florida" coords="484,332,518,328,521,333,563,328,594,382,594,403,589,408,581,407,568,390,556,375,553,363,546,351,528,340,524,347,514,348,506,338,489,341" shape="poly">
+                <area target="_blank" alt="New York" title="New York" href="https://it.wikipedia.org/wiki/New_York" coords="553,156,565,139,561,132,592,126,589,114,600,97,618,93,629,155,610,151,608,144" shape="poly">
+                <area target="_blank" alt="Iowa" title="Iowa" href="https://it.wikipedia.org/wiki/Iowa" coords="370,148,435,192" shape="rect">
+                <area target="_blank" alt="Arkansas" title="Arkansas" href="https://it.wikipedia.org/wiki/Arkansas" coords="418,279,31" shape="circle">
+            </map>
+        </section>
+        <section>   <!-- Mare o Montagna -->
+            <h2>Mare o Montagna</h2>
+            <div class="img-container">
+                <a href="es05Viaggi4.html">
+                    <img class="img" src="img/mare.jpeg" alt="mare"onmouseover="this.src='img/mare2.jpg';" onmouseout="this.src='img/mare.jpeg';">
+                </a>
+            </div>
+            <div class="img-container">
+                <a href="es05Viaggi5.html">
+                    <img class="img" src="img/montagna.jpg" alt="montagna"onmouseover="this.src='img/montagna2.jpg';" onmouseout="this.src='img/montagna.jpg';">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores consequatur dolor ipsam laboriosam architecto ullam tempora possimus culpa. Obcaecati enim commodi nobis, dolore magni et dolorem cumque reprehenderit quam! <a href="es05Viaggi1.html">torna su🔝</a></p>
+    </footer>
+    
+</body>
+</html>
